@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Super Matchy-Matchy Game</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <link rel="stylesheet" href="assets/css/indexstyle.css">
+</head>
+
+<body>
+
+  <header class="container-fluid text-center">
+    <center>
+      <img src="../assets/images/main2.png" alt="super matchy-matchy game">
+    </center>
+  </header>
+  <div id="picbox">
+    <span id="boxbuttons">
+      <span class="button">
+        <span id="score">0</span>
+        Score
+      </span>
+      <span class="button">
+        <span id="counter">0</span>
+        Clicks Left
+      </span>
+      <span class="button">
+        <a onclick="resetGame();">mulligan</a>
+      </span>
+    </span>
+    <div id="boxcard"></div>
+  </div>
+  <script type="text/javascript">
+    console.log(localStorage.getItem("difficulty"));
+  </script>
+  <script type="text/javascript" src="assets/js/gamelogic.js"></script>
+</body>
+
+</html>

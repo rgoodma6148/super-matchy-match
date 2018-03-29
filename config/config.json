@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "unlockme",
+    "database": "matchy_db",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "obfs213ebkcuin15",
+    "password": "lnrrks3hswvepzqm",
+    "database": "owm6krzr0fjawkaq",
+    "host": "z37udk8g6jiaqcbx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}

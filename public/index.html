@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Matchy-Matchy Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/indexstyle.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="text-center">
+            <br>
+            <br>
+            <br>
+            <center>
+
+                <img src="/assets/images/main2.png" class="img-responsive" alt="super matchy-matchy game">
+
+            </center>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <button type="button" id="btn-shape" class="btn btn-default btn-lg btn-color difficulty-btn" data-difficulty="E">Easy</button>
+            <br>
+            <br>
+
+            <button type="button" id="btn-shape" class="btn btn-default btn-lg btn-color difficulty-btn" data-difficulty="M">Moderate</button>
+            <br>
+            <br>
+
+            <button type="button" id="btn-shape" class="btn btn-default btn-lg btn-color difficulty-btn" data-difficulty="H">Hard</button>
+            <br>
+            <br>
+        </div>
+    </div>
+    <script>
+        $(".difficulty-btn").on("click", function () {
+            localStorage.setItem('difficulty', $(this).attr("data-difficulty"));
+            console.log(localStorage.getItem("difficulty"));
+            window.location.assign('gameboard.html');
+        });
+    </script>
+</body>
+
+</html>
